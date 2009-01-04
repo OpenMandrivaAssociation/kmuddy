@@ -1,4 +1,4 @@
-%define betaver pre3
+%define betaver pre4
 
 Summary:	A MUD client powered by KDE
 Name:		kmuddy
