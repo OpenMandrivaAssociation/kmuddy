@@ -1,11 +1,8 @@
-%define betaver pre4
-
 Summary:	A MUD client powered by KDE
 Name:		kmuddy
-Version: 	1.0
-Release: 	%mkrel -c %betaver 2
-Source0: 	http://www.kmuddy.com/releases/devel/%{name}-%{version}%{betaver}.tar.gz
-Patch0:		kmuddy-1.0-out-of-source-build.patch
+Version: 	1.0.1
+Release: 	%mkrel 1
+Source0: 	http://www.kmuddy.com/releases/devel/%{name}-%{version}.tar.gz
 Patch1:		kmuddy-1.0-install-desktop.patch
 License: 	GPLv2+
 Group: 		Games/Other
@@ -63,8 +60,7 @@ This package contains development files for kmuddy.
 #--------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}-%{version}%{betaver}
-%patch0 -p0
+%setup -qn %{name}-%{version}
 %patch1 -p0
 
 %build
