@@ -1,7 +1,7 @@
 Summary:	A MUD client powered by KDE
 Name:		kmuddy
 Version: 	1.0.1
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Source0: 	http://www.kmuddy.com/releases/devel/%{name}-%{version}.tar.gz
 Patch1:		kmuddy-1.0-install-desktop.patch
 License: 	GPLv2+
