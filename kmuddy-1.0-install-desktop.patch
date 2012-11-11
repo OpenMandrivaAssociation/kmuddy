@@ -1,0 +1,28 @@
+--- kmuddy/CMakeLists.txt~	2008-12-07 04:07:13.000000000 +0100
++++ kmuddy/CMakeLists.txt	2008-12-07 04:17:39.000000000 +0100
+@@ -62,6 +62,7 @@
+ target_link_libraries(kmuddy ${KMUDDY_LIBRARIES} )
+ 
+ install(TARGETS kmuddy DESTINATION ${BIN_INSTALL_DIR})
++install(FILES  kmuddy.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR})
+ 
+ # install the icons
+ kde4_install_icons( ${ICON_INSTALL_DIR} )
+--- kmuddy/kmuddy.desktop~	2008-12-06 11:57:44.000000000 +0100
++++ kmuddy/kmuddy.desktop	2008-12-07 04:20:24.000000000 +0100
+@@ -1,14 +1,11 @@
+ [Desktop Entry]
+ Version=1.0
+-Encoding=UTF-8
+ Name=KMuddy
+ Type=Application
+ Exec=kmuddy -caption "%c" %i %m
+-Icon=kmuddy.png
++Icon=kmuddy
+ DocPath=kmuddy/index.html
+ GenericName=MUD client
+ Comment=MUD client
+-Comment[de]=
+ Terminal=false
+ Name[de]=KMuddy
+-GenericName[en_CA]=MUD client
