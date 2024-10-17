@@ -6,7 +6,7 @@ Source0: 	http://www.kmuddy.com/releases/devel/%{name}-%{version}.tar.gz
 Patch1:		kmuddy-1.0-install-desktop.patch
 License: 	GPLv2+
 Group: 		Games/Other
-Url: 		http://www.kmuddy.com
+Url: 		https://www.kmuddy.com
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdelibs4-devel
 BuildRequires:	libmxp-devel
